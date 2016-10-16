@@ -8,8 +8,8 @@ use Test::More;
 require_ok('Lingua::Tatoeba');
 
 my $tatoeba = Lingua::Tatoeba->new(
-    sentences_path => 't/inc/sentences_test.csv',
-    links_path     => 't/inc/links_test.csv',
+    sentences      => 't/inc/sentences_test.csv',
+    links          => 't/inc/links_test.csv',
     languages      => [qw(eng deu)],
 );
 
